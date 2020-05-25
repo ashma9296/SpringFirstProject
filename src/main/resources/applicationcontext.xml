@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="p1" class="com.abc.spring.pojo.Person">
+		<property name="fullname" value="ashma khadka"></property>
+		<property name="email" value="akhadka@urgent.ly"></property>
+		<property name="phn" value="2407149296"></property>
+		<property name="occupation" value="QA"></property>
+	</bean>
+
+	<bean id="p2" class="com.abc.spring.pojo.Person">
+		<property name="fullname" value="abinash bastola"></property>
+		<property name="email" value="abinash@gmail.com"></property>
+		<property name="phn" value="4444444444"></property>
+		<property name="occupation" value="java developer"></property>
+		<property name="homeAddress" ref="home1"></property>
+		<property name="workAddress" ref="work1"></property>
+	</bean>
+
+	<bean id="home1" class="com.abc.spring.pojo.Address">
+		<property name="line1" value="1700 Tyvale ct"></property>
+		<property name="city" value="vienna"></property>
+	</bean>
+	
+	<bean id="work1" class="com.abc.spring.pojo.Address">
+		<property name="line1" value="8609 westwood center drive"></property>
+		<property name="city" value="vienna"></property>
+	</bean>
+
+
+</beans>
