@@ -23,11 +23,16 @@
 		<property name="line1" value="1700 Tyvale ct"></property>
 		<property name="city" value="vienna"></property>
 	</bean>
-	
+
 	<bean id="work1" class="com.abc.spring.pojo.Address">
 		<property name="line1" value="8609 westwood center drive"></property>
 		<property name="city" value="vienna"></property>
 	</bean>
 
+	<bean id="emp" class="com.abc.spring.pojo.Employee">
+		<constructor-arg value="ashma"></constructor-arg>
+		<constructor-arg value="2407149"></constructor-arg>
+		<constructor-arg value="ashma@gmail.com"></constructor-arg>
+	</bean>
 
 </beans>
